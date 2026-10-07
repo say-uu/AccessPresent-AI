@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Hand, Pointer, Sparkles, RadioTower, ThumbsUp, ThumbsDown } from "lucide-react";
+import { Hand, HandFist, Pointer, Sparkles, RadioTower, ThumbsUp, ThumbsDown } from "lucide-react";
 import { useSettings } from "../context/SettingsContext.jsx";
 import { useWebcam } from "../hooks/useWebcam.js";
 import { useGestureEngine } from "../hooks/useGestureEngine.js";
@@ -39,7 +39,7 @@ const INSTRUCTIONS = [
   },
   {
     gesture: GESTURES.FIST,
-    icon: Hand,
+    icon: HandFist,
     name: "Closed Fist",
     action: "Pauses gesture controls",
     instruction: "Curl all fingers into your palm to make a closed fist and hold it steady.",
